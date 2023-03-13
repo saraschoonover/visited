@@ -1,0 +1,25 @@
+<div class="city-container d-flex justify-content-center align-items-center flex-wrap">
+
+      <div class="card d-flex justify-content-center align-items-center" style="width: 18rem;">
+         <h5 class="card-title"><%= @city.name %></h5>
+         <h6 class="card-subtitle mb-2 text-muted"><%= @city.country %></h6>
+         <h6 class="p text-muted"><%= @city.continent %></h6>
+          <div class="delete-btn">
+            <%= link_to "Delete",
+            city_path(@city),
+            data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+          %>
+          </div>
+          <div class="edit-btn">
+          <%= link_to "Edit",
+            edit_city_path(@city)
+          %>
+          </div>
+        </div>
+  </div>
+
+
+
+<div class="cities-btn d-flex justify-content-center align-items-center flex-wrap">
+<%= link_to "Back to Cities", cities_index_path(@cities) %>
+</div>

@@ -1,0 +1,31 @@
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="banner-index d-flex justify-content-center align-items-center flex-column" style="height: 400px;">
+    <div class="list d-flex justify-content-center align-items-center flex-column">
+      <h2 class="bannerSubtitleIndex">Cities You've Visted</h2>
+    </div>
+  </div>
+</div>
+
+<div class="city-container d-flex justify-content-center align-items-center flex-wrap">
+    <% @cities.each do|city| %>
+      <div class="card d-flex justify-content-center align-items-center flex-wrap" style="width: 18rem;">
+         <h5 class="card-title"><%= link_to city.name, city_path(city) %></h5>
+         <h6 class="card-subtitle mb-2 text-muted"><%= city.country %></h6>
+         <h6 class="p text-muted"><%= city.continent %></h6>
+         </div>
+               <% end %>
+  </div>
+
+<div class="index-btns d-flex justify-content-center align-items-center flex-wrap">
+  <div>
+     <%= link_to root_path, class: "btn btn-warning btn-lg btn-home" do %>
+      Home
+    <% end %>
+  </div>
+  <div>
+    <%= link_to "cities/new", class: "btn btn-warning btn-lg btn-add-cities" do %>
+      Add City
+    <% end %>
+  </div>
+</div>

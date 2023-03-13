@@ -1,7 +1,29 @@
-.banner{
+.banner {
   //background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)),url("welcomeGoat.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dHJhdmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
   background-position: bottom;
   background-size: cover;
   color: white;
+}
+
+.bannerSubtitle {
+  margin-bottom: 20px;
+  font-size: 100px;
+}
+
+.banner-index {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1619467416348-6a782839e95f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dHJhdmVsaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
+  background-position: bottom;
+  background-size: cover;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.bannerSubtitleIndex {
+  margin-bottom: 20px;
+  font-size: 75px;
+}
+
+.lead {
+  font-size: 30px;
 }

@@ -1,0 +1,35 @@
+<div class="heading-form d-flex justify-content-center align-items-center">
+  <h1>Edit A City</h1>
+</div>
+
+<div class="form-new d-flex justify-content-center align-items-center">
+<%= form_with model: @city do |f| %>
+  <div class="new-country-card">
+  <div class="new-card-body">
+
+    <div class="mb-3">
+      <%= f.label :name, { class: "form-label"} %>
+      <%= f.text_field :name, { class: "form-control", placeholder: "Name" } %>
+    </div>
+
+    <div class="mb-3">
+      <%= f.label :country, { class: "form-label"} %>
+      <%= f.text_field :country, { class: "form-control", placeholder: "Country" } %>
+    </div>
+
+    <div class="mb-3">
+      <%= f.label :continent, { class: "form-label"} %>
+      <%= f.text_field :continent, { class: "form-control", placeholder: "Continent" } %>
+    </div>
+
+    <%= f.submit "Submit", class: "btn btn-primary" %>
+
+  </div>
+</div>
+<% end %>
+
+</div>
+
+<div class="new-form d-flex justify-content-center align-items-center">
+<%= link_to "Back to home", root_path %>
+</div>
