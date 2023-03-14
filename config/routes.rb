@@ -12,4 +12,18 @@ Rails.application.routes.draw do
   get 'cities/:id/edit', to: 'cities#edit', as: :edit_city
   patch 'cities/:id', to: 'cities#update'
   delete 'cities/:id', to: 'cities#destroy', as: :delete_city
+
+  get 'wishlists/index', to: 'wishlists#index'
+  get 'wishlists/wishlists/new', to: 'wishlists#new'
+  post 'wishlists', to: 'wishlists#create'
+  get 'wishlists/:id', to: 'wishlists#show', as: :wishlist
+  # patch 'cities/:id', to: 'cities#favorite'
+  # patch 'cities/:id', to: 'cities#unfavorite'
+  # resources :cities, only: %i[index show create] do
+  #   member do
+  #     patch :favorite, :unfavorite
+  #   end
+  # end
+
+  # get "users/:id/profile", to: "pages#profile", as: :user_profile
 end

@@ -1,0 +1,28 @@
+<div class="jumbotron jumbotron-fluid">
+
+  <div class="banner-wishlist d-flex justify-content-center align-items-center flex-column" style="height: 1000px;">
+
+    <div class="list d-flex justify-content-center align-items-center flex-column">
+      <h2 class="bannerSubtitleWishlist">Where would you like to go?</h2>
+      <p class="leadWishlist">Keep track of where in the world you'd like to go.</p>
+       <%= link_to "wishlists/new", class: "btn btn-warning btn-lg btn-seecities" do %>
+        Add A City
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="wishlist-container d-flex justify-content-center align-items-center flex-wrap">
+    <% @wishlists.each do|wishlist| %>
+      <div class="card d-flex justify-content-center align-items-center flex-wrap" style="width: 18rem;">
+         <h5 class="card-title">City: <%= link_to wishlist.name, wishlist_path(wishlist) %></h5>
+         <h6 class="card-subtitle mb-2 text-muted">Country: <%= wishlist.country %></h6>
+         <h6 class="p text-muted">Continent: <%= wishlist.continent %></h6>
+         <h6 class="p text-muted">Parks: <%= wishlist.park_name %></h6>
+         <h6 class="p text-muted">Coffee Shops: <%= wishlist.coffeeshop_name %></h6>
+         <h6 class="p text-muted">Restaurants: <%= wishlist.restaurant_name %></h6>
+         <h6 class="p text-muted">Neighborhoods: <%= wishlist.neighborhood_name %></h6>
+         </div>
+               <% end %>
+
+  </div>

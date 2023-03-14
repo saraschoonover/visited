@@ -1,0 +1,19 @@
+<div class="city-con d-flex justify-content-center align-items-center flex-column">
+<div class="city-container d-flex justify-content-center align-items-center flex-wrap">
+
+      <div class="card d-flex justify-content-center align-items-center" style="width: 18rem;">
+         <h5 class="card-title"><%= @wishlist.name %></h5>
+         <h6 class="card-subtitle mb-2 text-muted"><%= @wishlist.country %></h6>
+         <h6 class="p text-muted"><%= @wishlist.continent %></h6>
+         <h6 class="p text-muted"><%= @wishlist.park_name %></h6>
+         <h6 class="p text-muted"><%= @wishlist.coffeeshop_name %></h6>
+         <h6 class="p text-muted"><%= @wishlist.restaurant_name %></h6>
+         <h6 class="p text-muted"><%= @wishlist.neighborhood_name %></h6>
+
+
+  </div>
+
+<div class="cities-btn d-flex justify-content-center align-items-center flex-wrap">
+<%= link_to "Back to Wishlist", wishlists_index_path(@wishlists) %>
+</div>
+</div>

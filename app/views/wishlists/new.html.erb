@@ -1,10 +1,9 @@
-<div class="edit-container">
 <div class="heading-form d-flex justify-content-center align-items-center">
-  <h1>Edit A City</h1>
+  <h1>Add A City</h1>
 </div>
 
 <div class="form-new d-flex justify-content-center align-items-center">
-<%= form_with model: @city do |f| %>
+<%= form_with model: @wishlist do |f| %>
   <div class="new-country-card">
   <div class="new-card-body">
 
@@ -51,7 +50,10 @@
 
 </div>
 
-<div class="new-form d-flex justify-content-center align-items-center">
-<%= link_to "Back to home", root_path %>
-</div>
+<div class="index-btns d-flex justify-content-center align-items-center flex-wrap">
+  <div>
+     <%= link_to root_path, class: "btn btn-warning btn-lg btn-home" do %>
+      Home
+    <% end %>
+  </div>
 </div>
