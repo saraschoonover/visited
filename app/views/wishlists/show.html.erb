@@ -9,7 +9,17 @@
          <h6 class="p text-muted"><%= @wishlist.coffeeshop_name %></h6>
          <h6 class="p text-muted"><%= @wishlist.restaurant_name %></h6>
          <h6 class="p text-muted"><%= @wishlist.neighborhood_name %></h6>
-
+          <div class="delete-btn">
+            <%= link_to "Delete",
+            wishlist_path(@wishlist),
+            data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+          %>
+          </div>
+          <div class="edit-btn">
+          <%= link_to "Edit",
+            edit_wishlist_path(@wishlist)
+          %>
+          </div>
 
   </div>
 

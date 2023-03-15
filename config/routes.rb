@@ -17,6 +17,9 @@ Rails.application.routes.draw do
   get 'wishlists/wishlists/new', to: 'wishlists#new'
   post 'wishlists', to: 'wishlists#create'
   get 'wishlists/:id', to: 'wishlists#show', as: :wishlist
+  get 'wishlists/:id/edit', to: 'wishlists#edit', as: :edit_wishlist
+  patch 'wishlists/:id', to: 'wishlists#update'
+  delete 'wishlists/:id', to: 'wishlists#destroy', as: :delete_wishlist
   # patch 'cities/:id', to: 'cities#favorite'
   # patch 'cities/:id', to: 'cities#unfavorite'
   # resources :cities, only: %i[index show create] do

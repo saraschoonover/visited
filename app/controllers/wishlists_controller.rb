@@ -18,6 +18,22 @@ class WishlistsController < ApplicationController
     redirect_to wishlist_path(@wishlist)
   end
 
+  def edit
+    set_wishlists
+  end
+
+  def update
+    set_wishlists
+    @wishlist.update(wishlist_params)
+    redirect_to wishlist_path(@wishlist)
+  end
+
+  def destroy
+    set_wishlists
+    @wishlist.destroy
+    redirect_to wishlists_index_path, status: :see_other
+  end
+
   private
 
   def wishlist_params

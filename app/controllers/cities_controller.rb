@@ -8,8 +8,7 @@ class CitiesController < ApplicationController
 
   def show
     # set_cities
-    raise
-    # @city = City.find(params[:id])
+    @city = City.find(params[:id])
   end
 
   def new

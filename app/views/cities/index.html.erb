@@ -10,17 +10,13 @@
 <div class="city-container d-flex justify-content-center align-items-center flex-wrap">
     <% @cities.each do|city| %>
       <div class="card d-flex justify-content-center align-items-center flex-wrap" style="width: 18rem;">
-         <h5 class="card-title">City: <%= link_to city.name, city_path(city) %></h5>
-         <h6 class="card-subtitle mb-2 text-muted">Country: <%= city.country %></h6>
-         <h6 class="p text-muted">Continent: <%= city.continent %></h6>
-         <h6 class="p text-muted">Parks: <%= city.park_name %></h6>
-         <h6 class="p text-muted">Coffee Shops: <%= city.coffeeshop_name %></h6>
-         <h6 class="p text-muted">Restaurants: <%= city.restaurant_name %></h6>
-         <h6 class="p text-muted">Neighborhoods: <%= city.neighborhood_name %></h6>
+         <h5 class="card-title"> <%= link_to city.name, city_path(city) %></h5>
+
          </div>
                <% end %>
 
   </div>
+
 
 <div class="index-btns d-flex justify-content-center align-items-center flex-wrap">
   <div>

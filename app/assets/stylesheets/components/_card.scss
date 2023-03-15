@@ -3,15 +3,23 @@
 // }
 
 .card {
-  //background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1550779991-7a33aed4827a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60");
-  //color: white;
-  background-color: #ebd3d0;
-  margin: 20px;
-  height: 200px;
-  border-radius: 30px;
-  box-shadow: 5px;
+  //background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHNpbXBsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
+ // color: white;
+  //border: 0.5px solid rgb(189, 186, 186);
+  //background-size: cover;
+ padding: 10px;
+ margin: 50px;
+ height: 300px;
+ width: 200px;
+ box-shadow: 0px 0px 5px rgb(230, 230, 230);
+ opacity: 1;
 }
 
 .cities-heading {
   margin: 30px;
 }
+
+
+
+
+// #ebd3d0
